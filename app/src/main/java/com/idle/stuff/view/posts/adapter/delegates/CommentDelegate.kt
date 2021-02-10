@@ -1,0 +1,24 @@
+package com.idle.stuff.view.posts.adapter.delegates
+
+import adapter_delegate.AdapterDelegate
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.citrix.coroutinestest.R
+import com.idle.stuff.view.posts.adapter.items.CommentItem
+import com.idle.stuff.view.posts.adapter.items.PostAdapterItem
+import com.idle.stuff.view.posts.adapter.viewholders.CommentViewHolder
+
+class CommentDelegate :
+    AdapterDelegate<CommentItem, PostAdapterItem, CommentViewHolder>(PostAdapterItem.PostAdapterItemType.COMMENT.ordinal) {
+
+    override fun onCreateViewHolder(parent: ViewGroup): RecyclerView.ViewHolder {
+        return CommentViewHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.item_comment, parent, false)
+        )
+    }
+
+    override fun onBindViewHolder(holder: CommentViewHolder, item: CommentItem) {
+        holder.commentTextView.text = item.body
+    }
+}
