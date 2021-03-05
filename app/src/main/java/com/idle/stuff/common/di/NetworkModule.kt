@@ -1,6 +1,7 @@
 package com.idle.stuff.common.di
 
-import com.citrix.coroutinestest.R
+
+import com.idle.stuff.R
 import com.idle.stuff.data.network.RetrofitClient
 import com.idle.stuff.utils.ResExtractor
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory

@@ -4,7 +4,7 @@ import adapter_delegate.AdapterDelegate
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.citrix.coroutinestest.R
+import com.idle.stuff.R
 import com.idle.stuff.view.posts.adapter.items.CommentItem
 import com.idle.stuff.view.posts.adapter.items.PostAdapterItem
 import com.idle.stuff.view.posts.adapter.viewholders.CommentViewHolder

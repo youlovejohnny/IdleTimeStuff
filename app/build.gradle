@@ -70,4 +70,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.2.2'
+
+    implementation "androidx.asynclayoutinflater:asynclayoutinflater:1.0.0"
 }

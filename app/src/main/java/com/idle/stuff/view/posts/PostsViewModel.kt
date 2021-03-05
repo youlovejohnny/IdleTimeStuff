@@ -8,6 +8,10 @@ import com.idle.stuff.domain.interactors.posts.SubscribeForPostsUseCase
 import com.idle.stuff.domain.interactors.posts.UpdatePostsUseCase
 import com.idle.stuff.view.base.BaseViewModel
 import com.idle.stuff.view.posts.adapter.items.PostAdapterItem
+import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class PostsViewModel @ViewModelInject constructor(
     private val updatePostsUseCase: UpdatePostsUseCase,

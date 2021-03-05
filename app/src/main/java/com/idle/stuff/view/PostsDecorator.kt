@@ -3,7 +3,7 @@ package com.idle.stuff.view
 import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.citrix.coroutinestest.R
+import com.idle.stuff.R
 import com.idle.stuff.utils.ResExtractor
 
 class PostsDecorator: RecyclerView.ItemDecoration() {
